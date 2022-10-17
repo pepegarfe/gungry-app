@@ -1,34 +1,33 @@
 {
   "project_info": {
-    "project_number": "30318751485",
-    "firebase_url": "https://nearme-v4.firebaseio.com",
-    "project_id": "nearme-v4",
-    "storage_bucket": "nearme-v4.appspot.com"
+    "project_number": "416482418896",
+    "project_id": "gungry-1246d",
+    "storage_bucket": "gungry-1246d.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:30318751485:android:9459f0cc36c6ecd6",
+        "mobilesdk_app_id": "1:416482418896:android:230a36a1e7febd01483ed5",
         "android_client_info": {
-          "package_name": "com.quanlabs.nearme5"
+          "package_name": "com.gungry.app"
         }
       },
       "oauth_client": [
         {
-          "client_id": "30318751485-qqf26fbrr1diarvdipaqjh7mh2re28gj.apps.googleusercontent.com",
+          "client_id": "416482418896-d14d1oqbc0b6i8na5tnvlgackfevlnql.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDU6938QEQOasfoaW4HIfw3UkyVFCHZe8Y"
+          "current_key": "AIzaSyDxBGWHUFizU_4K4GAzqKKb_8-lkTAvShE"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "30318751485-qqf26fbrr1diarvdipaqjh7mh2re28gj.apps.googleusercontent.com",
+              "client_id": "416482418896-d14d1oqbc0b6i8na5tnvlgackfevlnql.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

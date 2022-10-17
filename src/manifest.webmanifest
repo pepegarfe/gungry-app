@@ -1,7 +1,7 @@
 {
-  "name": "Nearme",
-  "short_name": "Nearme",
-  "theme_color": "#D4145A",
+  "name": "Gungry",
+  "short_name": "Gungry",
+  "theme_color": "#fcdc00",
   "background_color": "#fafafa",
   "display": "standalone",
   "scope": "/",

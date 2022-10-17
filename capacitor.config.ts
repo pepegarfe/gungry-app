@@ -1,9 +1,9 @@
 import { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
-  appId: 'com.quanlabs.nearme5',
-  appName: 'Nearme',
-  webDir: 'www',
+  appId: 'com.gungry.app',
+  appName: 'Gungry',
+  webDir: 'www.gungry.com',
   bundledWebRuntime: false,
   plugins: {
     SplashScreen: {
@@ -20,9 +20,9 @@ const config: CapacitorConfig = {
     },
     GoogleAuth: {
       scopes: ['profile', 'email'],
-      iosClientId: 'xxxxxxxxxxxxxxxxxxxxxxxxxxxx.apps.googleusercontent.com',
-      androidClientId: 'xxxxxxxxxxxxxxxxxxxxxxxxxxxx.apps.googleusercontent.com',
-      serverClientId: 'xxxxxxxxxxxxxxxxxxxxxxxxxxxx.apps.googleusercontent.com',
+      iosClientId: '416482418896-d14d1oqbc0b6i8na5tnvlgackfevlnql.apps.googleusercontent.com',
+      androidClientId: '416482418896-d14d1oqbc0b6i8na5tnvlgackfevlnql.apps.googleusercontent.com',
+      serverClientId: '416482418896-d14d1oqbc0b6i8na5tnvlgackfevlnql.apps.googleusercontent.com',
       forceCodeForRefreshToken: true
     }
   }
