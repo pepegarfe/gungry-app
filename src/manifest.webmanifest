@@ -1,7 +1,7 @@
 {
   "name": "Gungry",
   "short_name": "Gungry",
-  "theme_color": "#fcdc00",
+  "theme_color": "#000000",
   "background_color": "#fafafa",
   "display": "standalone",
   "scope": "/",
