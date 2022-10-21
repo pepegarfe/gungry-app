@@ -63,7 +63,7 @@ export class TabsPage extends BasePage implements OnInit {
 
   ngOnInit() {
 
-    this.tabNames = ['home', 'explore', 'posts', 'profile'];
+    this.tabNames = ['home', 'explore', 'posts', 'likes', 'profile'];
 
     this.topLevelRoutes = [
       '/',
@@ -71,6 +71,7 @@ export class TabsPage extends BasePage implements OnInit {
       '/1/home',
       '/1/explore',
       '/1/posts',
+      '/1/profile/likes',
       '/1/profile',
     ];
 
