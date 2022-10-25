@@ -126,7 +126,7 @@
   "VIEW_PLACE": "Ver lugar",
   "POSTS": "Eventos",
   "HOME": "Inicio",
-  "EMAIL_VALIDATION_HELP": "Opcional. Para recuperación de contraseña.",
+  "EMAIL_VALIDATION_HELP": "Necesario para recuperación de contraseña.",
   "INVALID_LOCATION": "Por favor establece una posición GPS en el mapa.",
   "INVALID_PHOTO": "Foto inválida",
   "VIEW_MORE": "Ver más",
