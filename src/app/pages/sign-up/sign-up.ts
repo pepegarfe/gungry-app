@@ -32,7 +32,7 @@ export class SignUpPage extends BasePage {
     this.form = new FormGroup({
       name: new FormControl('', Validators.required),
       username: new FormControl('', [Validators.required, Validators.minLength(3)]),
-      email: new FormControl('', Validators.email),
+      email: new FormControl('', Validators.required),
       password: new FormControl('', [Validators.required, Validators.minLength(6)]),
       confirmPassword: new FormControl('', [Validators.required, Validators.minLength(6)]),
       terms: new FormControl(false, Validators.requiredTrue),
