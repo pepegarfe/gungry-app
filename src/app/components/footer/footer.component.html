@@ -12,12 +12,6 @@
           <ion-button fill="clear" color="light" target="_blank" *ngIf="whatsapp" (click)="openUrl(whatsapp)">
             <ion-icon slot="icon-only" name="logo-whatsapp"></ion-icon>
           </ion-button>
-          <ion-button fill="clear" color="light" target="_blank" *ngIf="email" (click)="openUrl('mailto:' + email)">
-            <ion-icon slot="icon-only" name="mail"></ion-icon>
-          </ion-button>
-          <ion-button fill="clear" color="light" target="_blank" *ngIf="phone" (click)="openUrl('tel:' + phone)">
-            <ion-icon slot="icon-only" name="call"></ion-icon>
-          </ion-button>
         </div>
         <div class="flex ion-justify-content-center ion-align-items-center">
           <a target="_blank" [href]="appStoreUrl" *ngIf="appStoreUrl">
