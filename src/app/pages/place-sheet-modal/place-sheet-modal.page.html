@@ -11,11 +11,6 @@
             {{ place.title }}
           </ion-text>
         </h2>
-        <ion-text color="medium">
-          <p class="bold no-margin">
-            {{ place.categories.join(' &bull; ') }}
-          </p>
-        </ion-text>
         <bar-rating class="rating" *ngIf="place.ratingAvg" [rate]="place.rating" [readOnly]="true" [max]="5"
           [theme]="'stars'"></bar-rating>
       </ion-label>
