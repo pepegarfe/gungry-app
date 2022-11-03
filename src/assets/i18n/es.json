@@ -209,7 +209,7 @@
   "COPYRIGHT": "Todos los derechos reservados.",
   "PRICE_RANGE": "Rango de precios",
   "UNSPECIFIED": "Sin especificar",
-  "WHATS_APP_SHARE_TEXT": "Hola, he encontrado esta publicación {{ placeUrl }} en {{ appName }}. Por favor, envíenme más información y contáctenme por WhatsApp.",
-  "WHATS_APP_PLACEHOLDER": "Phone number with country code",
+  "WHATS_APP_SHARE_TEXT": "Hola, me interesa esta promoción {{ placeUrl }} que encontré en {{ appName }}.",
+  "WHATS_APP_PLACEHOLDER": "Ej: 523331669999",
   "WHATS_APP_HELPER": "Código de país + número de teléfono. No incluyas los ceros, paréntesis ni guiones cuando añadas el número de teléfono en este formato."
 }
