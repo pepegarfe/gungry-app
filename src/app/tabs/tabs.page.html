@@ -20,6 +20,11 @@
       <ion-icon name="map-outline"></ion-icon>
       <ion-label>{{ 'MAP' | translate }}</ion-label>
     </ion-tab-button>
+    
+    <ion-tab-button tab="likes" layout="icon-top" (click)="handleTabClick($event)">
+      <ion-icon name="heart-outline"></ion-icon>
+      <ion-label>{{ 'LIKES' | translate }}</ion-label>
+    </ion-tab-button>
 
     <ion-tab-button tab="profile" layout="icon-top" (click)="handleTabClick($event)">
       <ion-icon name="person-outline"></ion-icon>
@@ -46,7 +51,12 @@
     <ion-tab-button tab="map" layout="icon-start" (click)="handleTabClick($event)">
       <ion-icon name="map-outline"></ion-icon>
       <ion-label>{{ 'MAP' | translate }}</ion-label>
-    </ion-tab-button> 
+    </ion-tab-button>
+    
+    <ion-tab-button tab="likes" layout="icon-start" (click)="handleTabClick($event)">
+      <ion-icon name="heart-outline"></ion-icon>
+      <ion-label>{{ 'LIKES' | translate }}</ion-label>
+    </ion-tab-button>
 
     <ion-tab-button tab="profile" layout="icon-start" (click)="handleTabClick($event)">
       <ion-icon name="person-outline"></ion-icon>
