@@ -173,6 +173,7 @@ const routes: Routes = [
           {
             path: '',
             loadChildren: () => import('../pages/map/map.module').then(m => m.MapPageModule)
+          },
         ]
       },
       {
