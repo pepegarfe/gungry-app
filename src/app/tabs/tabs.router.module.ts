@@ -168,7 +168,6 @@ const routes: Routes = [
       },
       {
         path: 'home/places/map',
-        data: { tab: 'map' },
         children: [
           {
             path: '',
