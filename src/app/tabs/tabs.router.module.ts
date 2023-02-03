@@ -167,6 +167,15 @@ const routes: Routes = [
         ]
       },
       {
+        path: 'home/places/map',
+        data: { tab: 'map' },
+        children: [
+          {
+            path: '',
+            loadChildren: () => import('../pages/map/map.module').then(m => m.MapPageModule)
+        ]
+      },
+      {
         path: 'profile',
         children: [
           {
