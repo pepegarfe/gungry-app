@@ -167,7 +167,7 @@ const routes: Routes = [
         ]
       },
       {
-        path: 'home/places/map',
+        path: 'map',
         children: [
           {
             path: '',
