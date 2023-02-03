@@ -19,7 +19,7 @@ ion-tab-bar[slot="bottom"] {
     --padding-bottom: 8px;
     --padding-top: 8px;
     background: transparent;
-    margin: 0px 5px;
+    margin: 0px 10px;
 
     ion-icon.md,
     ion-label.md {
@@ -30,7 +30,7 @@ ion-tab-bar[slot="bottom"] {
       background-color: transparent;
       display: block;
       content: " ";
-      margin: 0 auto;
+      margin: 0px 10px;
       width: 20px;
       height: 2px;
     }
