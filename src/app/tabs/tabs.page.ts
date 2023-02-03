@@ -72,7 +72,7 @@ export class TabsPage extends BasePage implements OnInit {
       '/1/explore',
       '/1/posts',
       '/1/map',
-      '/1/profile/likes',
+      '/1/likes',
       '/1/profile',
     ];
 
