@@ -175,6 +175,26 @@ const routes: Routes = [
           },
         ]
       },
+       {
+        path: 'likes',
+        children: [
+          {
+            path: '',
+            canActivate: [AuthGuard],
+            loadChildren: () => import('../pages/favorite-list/favorite-list.module').then(m => m.FavoriteListPageModule)
+          },
+          {
+            path: 'likes/:id',
+            canActivate: [AuthGuard],
+            loadChildren: () => import('../pages/place-detail/place-detail.module').then(m => m.PlaceDetailPageModule)
+          },
+          {
+            path: 'likes/:id/reviews',
+            canActivate: [AuthGuard],
+            loadChildren: () => import('../pages/review-list/review-list.module').then(m => m.ReviewListPageModule)
+          },
+        ]
+      },
       {
         path: 'profile',
         children: [
