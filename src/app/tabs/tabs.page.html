@@ -10,6 +10,11 @@
       <ion-icon name="search-outline"></ion-icon>
       <ion-label>{{ 'EXPLORE' | translate }}</ion-label>
     </ion-tab-button>
+
+    <ion-tab-button tab="posts" layout="icon-top" (click)="handleTabClick($event)">
+      <ion-icon name="notifications-outline"></ion-icon>
+      <ion-label>{{ 'POSTS' | translate }}</ion-label>
+    </ion-tab-button>
     
     <ion-tab-button tab="map" layout="icon-top" (click)="handleTabClick($event)">
       <ion-icon name="map-outline"></ion-icon>
@@ -36,6 +41,11 @@
     <ion-tab-button tab="explore" layout="icon-start" (click)="handleTabClick($event)">
       <ion-icon name="search-outline"></ion-icon>
       <ion-label>{{ 'EXPLORE' | translate }}</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="posts" layout="icon-start" (click)="handleTabClick($event)">
+      <ion-icon name="notifications-outline"></ion-icon>
+      <ion-label>{{ 'POSTS' | translate }}</ion-label>
     </ion-tab-button>
     
     <ion-tab-button tab="map" layout="icon-start" (click)="handleTabClick($event)">
