@@ -175,8 +175,48 @@ const routes: Routes = [
             loadChildren: () => import('../pages/map/map.module').then(m => m.MapPageModule)
           },
           {
+            path: 'search',
+            loadChildren: () => import('../pages/search/search.module').then(m => m.SearchPageModule)
+          },
+          {
+            path: 'places',
+            loadChildren: () => import('../pages/place-list/place-list.module').then(m => m.PlaceListPageModule)
+          },
+          {
+            path: 'places/add',
+            loadChildren: () => import('../pages/place-save/place-save.module').then(m => m.PlaceSavePageModule)
+          },
+          {
+            path: 'places/map',
+            loadChildren: () => import('../pages/map/map.module').then(m => m.MapPageModule)
+          },
+          {
+            path: 'places/:id/:slug/reviews',
+            loadChildren: () => import('../pages/review-list/review-list.module').then(m => m.ReviewListPageModule)
+          },
+          {
+            path: 'places/:id/reviews',
+            loadChildren: () => import('../pages/review-list/review-list.module').then(m => m.ReviewListPageModule)
+          },
+          {
             path: 'places/:id',
             loadChildren: () => import('../pages/place-detail/place-detail.module').then(m => m.PlaceDetailPageModule)
+          },
+          {
+            path: 'places/:id/:slug',
+            loadChildren: () => import('../pages/place-detail/place-detail.module').then(m => m.PlaceDetailPageModule)
+          },
+          {
+            path: 'posts/',
+            loadChildren: () => import('../pages/post-list/post-list.module').then(m => m.PostListPageModule)
+          },
+          {
+            path: 'posts/:id',
+            loadChildren: () => import('../pages/post-detail/post-detail.module').then(m => m.PostDetailPageModule)
+          },
+          {
+            path: 'posts/:id/:slug',
+            loadChildren: () => import('../pages/post-detail/post-detail.module').then(m => m.PostDetailPageModule)
           },
         ]
       },
