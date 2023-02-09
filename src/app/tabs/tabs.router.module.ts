@@ -171,7 +171,7 @@ const routes: Routes = [
         data: { tab: 'map' },
         children: [
           {
-            path: 'map',
+            path: '',
             loadChildren: () => import('../pages/map/map.module').then(m => m.MapPageModule)
           },
           {
