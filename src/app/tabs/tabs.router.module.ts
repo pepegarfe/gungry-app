@@ -168,7 +168,7 @@ const routes: Routes = [
       },
       {
         path: 'map',
-        data: { tab: 'map' },
+        data: { tab: 'home' },
         children: [
           {
             path: '',
@@ -176,7 +176,7 @@ const routes: Routes = [
           },
           {
             path: 'places/:id',
-            loadChildren: () => import('../home/place-detail/place-detail.module').then(m => m.PlaceDetailPageModule)
+            loadChildren: () => import('../pages/place-detail/place-detail.module').then(m => m.PlaceDetailPageModule)
           },
         ]
       },
