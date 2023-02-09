@@ -4,6 +4,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { TabsPage } from './tabs.page';
 import { AuthGuard } from '../services/auth-guard/auth.guard';
 
+import { FavoriteListPage } from './favorite-list';
+
 const routes: Routes = [
   {
     path: '1',
