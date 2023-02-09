@@ -176,7 +176,7 @@ const routes: Routes = [
           },
           {
             path: 'places/:id',
-            loadChildren: () => import('../pages/home/place-detail/place-detail.module').then(m => m.PlaceDetailPageModule)
+            loadChildren: () => import('../home/place-detail/place-detail.module').then(m => m.PlaceDetailPageModule)
           },
         ]
       },
