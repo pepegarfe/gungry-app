@@ -168,10 +168,10 @@ const routes: Routes = [
       },
       {
         path: 'map',
-        data: { tab: 'home' },
+        data: { tab: 'map' },
         children: [
           {
-            path: '',
+            path: 'map',
             loadChildren: () => import('../pages/map/map.module').then(m => m.MapPageModule)
           },
           {
