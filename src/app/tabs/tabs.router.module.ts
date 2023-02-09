@@ -167,16 +167,23 @@ const routes: Routes = [
         ]
       },
       {
-        path: 'map',
+        path: 'places/map',
+        data: { tab: 'map' },
         children: [
           {
             path: '',
             loadChildren: () => import('../pages/map/map.module').then(m => m.MapPageModule)
           },
+          {
+            path: 'places/:id',
+            loadChildren: () => import('../pages/place-detail/place-detail.module').then(m => m.PlaceDetailPageModule)
+          },
+          {
         ]
       },
        {
         path: 'likes',
+        data: { tab: 'likes' },
         children: [
           {
             path: '',
