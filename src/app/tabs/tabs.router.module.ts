@@ -222,25 +222,8 @@ const routes: Routes = [
        {
         path: 'likes',
         children: [
-           {
+          {
             path: '',
-            loadChildren: () => import('../pages/profile/profile.module').then(m => m.ProfilePageModule)
-          },
-          {
-            path: 'help',
-            loadChildren: () => import('../pages/about/about.module').then(m => m.AboutPageModule)
-          },
-          {
-            path: 'pages/:id/:slug',
-            loadChildren: () => import('../pages/page/page.module').then(m => m.PageViewModule)
-          },
-          {
-            path: 'reviews',
-            canActivate: [AuthGuard],
-            loadChildren: () => import('../pages/review-user-list/review-user-list.module').then(m => m.ReviewUserListPageModule)
-          },
-          {
-            path: 'likes',
             canActivate: [AuthGuard],
             loadChildren: () => import('../pages/favorite-list/favorite-list.module').then(m => m.FavoriteListPageModule)
           },
@@ -253,36 +236,6 @@ const routes: Routes = [
             path: 'likes/:id/reviews',
             canActivate: [AuthGuard],
             loadChildren: () => import('../pages/review-list/review-list.module').then(m => m.ReviewListPageModule)
-          },
-          {
-            path: 'places',
-            canActivate: [AuthGuard],
-            loadChildren: () => import('../pages/place-user-list/place-user-list.module').then(m => m.PlaceUserListPageModule)
-          },
-          {
-            path: 'places/:id/edit',
-            canActivate: [AuthGuard],
-            loadChildren: () => import('../pages/place-save/place-save.module').then(m => m.PlaceSavePageModule)
-          },
-          {
-            path: 'places/add',
-            loadChildren: () => import('../pages/place-save/place-save.module').then(m => m.PlaceSavePageModule)
-          },
-          {
-            path: 'places/:id/reviews',
-            loadChildren: () => import('../pages/review-list/review-list.module').then(m => m.ReviewListPageModule)
-          },
-          {
-            path: 'places/:id/:slug/reviews',
-            loadChildren: () => import('../pages/review-list/review-list.module').then(m => m.ReviewListPageModule)
-          },
-          {
-            path: 'places/:id',
-            loadChildren: () => import('../pages/place-detail/place-detail.module').then(m => m.PlaceDetailPageModule)
-          },
-          {
-            path: 'places/:id/:slug',
-            loadChildren: () => import('../pages/place-detail/place-detail.module').then(m => m.PlaceDetailPageModule)
           },
         ]
       },
