@@ -168,10 +168,10 @@ const routes: Routes = [
       },
       {
         path: 'map',
-        data: { tab: 'map' },
+        data: { tab: 'places/map' },
         children: [
           {
-            path: 'places/map',
+            path: '',
             loadChildren: () => import('../pages/map/map.module').then(m => m.MapPageModule)
           },
           {
@@ -222,10 +222,10 @@ const routes: Routes = [
       },
        {
         path: 'likes',
-        data: { tab: 'likes' },
+        data: { tab: 'profile/likes' },
         children: [
           {
-            path: 'profile/likes',
+            path: '',
             canActivate: [AuthGuard],
             loadChildren: () => import('../pages/favorite-list/favorite-list.module').then(m => m.FavoriteListPageModule)
           },
