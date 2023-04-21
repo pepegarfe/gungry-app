@@ -167,8 +167,8 @@ const routes: Routes = [
         ]
       },
       {
-        path: 'home/places/map',
-        data: { tab: 'map' },
+        path: 'map',
+        data: { tab: 'home/places/map' },
         children: [
           {
             path: '',
@@ -214,6 +214,11 @@ const routes: Routes = [
         children: [
           {
             path: '',
+            canActivate: [AuthGuard],
+            loadChildren: () => import('../pages/favorite-list/favorite-list.module').then(m => m.FavoriteListPageModule)
+          },
+          {
+            path: 'likes/:id',
             canActivate: [AuthGuard],
             loadChildren: () => import('../pages/place-detail/place-detail.module').then(m => m.PlaceDetailPageModule)
           },
