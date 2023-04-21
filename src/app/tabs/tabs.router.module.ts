@@ -167,11 +167,11 @@ const routes: Routes = [
         ]
       },
       {
-        path: 'places/map',
+        path: 'map',
         data: { tab: 'map' },
         children: [
           {
-            path: '',
+            path: 'places/map',
             loadChildren: () => import('../pages/map/map.module').then(m => m.MapPageModule)
           },
           {
@@ -221,11 +221,11 @@ const routes: Routes = [
         ]
       },
        {
-        path: 'profile/likes',
+        path: 'likes',
         data: { tab: 'likes' },
         children: [
           {
-            path: '',
+            path: 'profile/likes',
             canActivate: [AuthGuard],
             loadChildren: () => import('../pages/favorite-list/favorite-list.module').then(m => m.FavoriteListPageModule)
           },
