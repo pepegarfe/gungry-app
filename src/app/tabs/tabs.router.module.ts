@@ -168,7 +168,7 @@ const routes: Routes = [
       },
       {
         path: 'map',
-        data: { tab: 'home' },
+        data: { tab: 'map' },
         children: [
           {
             path: '',
@@ -185,10 +185,6 @@ const routes: Routes = [
           {
             path: 'places/add',
             loadChildren: () => import('../pages/place-save/place-save.module').then(m => m.PlaceSavePageModule)
-          },
-          {
-            path: 'places/map',
-            loadChildren: () => import('../pages/map/map.module').then(m => m.MapPageModule)
           },
           {
             path: 'places/:id/:slug/reviews',
@@ -238,6 +234,36 @@ const routes: Routes = [
             path: 'likes/:id/reviews',
             canActivate: [AuthGuard],
             loadChildren: () => import('../pages/review-list/review-list.module').then(m => m.ReviewListPageModule)
+          },
+          {
+            path: 'places',
+            canActivate: [AuthGuard],
+            loadChildren: () => import('../pages/place-user-list/place-user-list.module').then(m => m.PlaceUserListPageModule)
+          },
+          {
+            path: 'places/:id/edit',
+            canActivate: [AuthGuard],
+            loadChildren: () => import('../pages/place-save/place-save.module').then(m => m.PlaceSavePageModule)
+          },
+          {
+            path: 'places/add',
+            loadChildren: () => import('../pages/place-save/place-save.module').then(m => m.PlaceSavePageModule)
+          },
+          {
+            path: 'places/:id/reviews',
+            loadChildren: () => import('../pages/review-list/review-list.module').then(m => m.ReviewListPageModule)
+          },
+          {
+            path: 'places/:id/:slug/reviews',
+            loadChildren: () => import('../pages/review-list/review-list.module').then(m => m.ReviewListPageModule)
+          },
+          {
+            path: 'places/:id',
+            loadChildren: () => import('../pages/place-detail/place-detail.module').then(m => m.PlaceDetailPageModule)
+          },
+          {
+            path: 'places/:id/:slug',
+            loadChildren: () => import('../pages/place-detail/place-detail.module').then(m => m.PlaceDetailPageModule)
           },
         ]
       },
