@@ -167,8 +167,8 @@ const routes: Routes = [
         ]
       },
       {
-        path: 'map',
-        data: { tab: 'places/map' },
+        path: 'home',
+        data: { tab: 'map' },
         children: [
           {
             path: '',
@@ -221,8 +221,8 @@ const routes: Routes = [
         ]
       },
        {
-        path: 'likes',
-        data: { tab: 'profile/likes' },
+        path: 'profile',
+        data: { tab: 'likes' },
         children: [
           {
             path: '',
