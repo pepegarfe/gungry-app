@@ -167,16 +167,12 @@ const routes: Routes = [
         ]
       },
       {
-        path: 'map',
+        path: 'home/places/map',
         data: { tab: 'map' },
         children: [
           {
             path: '',
             loadChildren: () => import('../pages/map/map.module').then(m => m.MapPageModule)
-          },
-          {
-            path: 'search',
-            loadChildren: () => import('../pages/search/search.module').then(m => m.SearchPageModule)
           },
           {
             path: 'places',
@@ -187,11 +183,11 @@ const routes: Routes = [
             loadChildren: () => import('../pages/place-save/place-save.module').then(m => m.PlaceSavePageModule)
           },
           {
-            path: 'places/:id/:slug/reviews',
+            path: 'places/:id/reviews',
             loadChildren: () => import('../pages/review-list/review-list.module').then(m => m.ReviewListPageModule)
           },
           {
-            path: 'places/:id/reviews',
+            path: 'places/:id/:slug/reviews',
             loadChildren: () => import('../pages/review-list/review-list.module').then(m => m.ReviewListPageModule)
           },
           {
@@ -203,15 +199,11 @@ const routes: Routes = [
             loadChildren: () => import('../pages/place-detail/place-detail.module').then(m => m.PlaceDetailPageModule)
           },
           {
-            path: 'posts/',
-            loadChildren: () => import('../pages/post-list/post-list.module').then(m => m.PostListPageModule)
-          },
-          {
-            path: 'posts/:id',
+            path: ':id',
             loadChildren: () => import('../pages/post-detail/post-detail.module').then(m => m.PostDetailPageModule)
           },
           {
-            path: 'posts/:id/:slug',
+            path: ':id/:slug',
             loadChildren: () => import('../pages/post-detail/post-detail.module').then(m => m.PostDetailPageModule)
           },
         ]
@@ -222,11 +214,6 @@ const routes: Routes = [
         children: [
           {
             path: '',
-            canActivate: [AuthGuard],
-            loadChildren: () => import('../pages/favorite-list/favorite-list.module').then(m => m.FavoriteListPageModule)
-          },
-          {
-            path: 'likes/:id',
             canActivate: [AuthGuard],
             loadChildren: () => import('../pages/place-detail/place-detail.module').then(m => m.PlaceDetailPageModule)
           },
