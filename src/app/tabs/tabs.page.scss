@@ -18,7 +18,7 @@ ion-tab-bar[slot="bottom"] {
     --color-selected: var(--ion-color-primary);
     --padding-bottom: 8px;
     --padding-top: 8px;
-    background:  var(--ion-color-primary-shade);
+    background:  transparent;
     margin: 0 auto;
 
     ion-icon.md,
@@ -27,7 +27,7 @@ ion-tab-bar[slot="bottom"] {
     }
 
     &::before {
-      background-color: var(--ion-color-primary-shade);
+      background-color: transparent;
       display: block;
       content: " ";
       margin: 0px 0px;
