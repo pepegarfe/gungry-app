@@ -36,7 +36,7 @@ ion-tab-bar[slot="bottom"] {
     }
 
     &.tab-selected::before {
-      background-color: var(--ion-color-primary-contrast);
+      background-color: var(--ion-color-primary-shade);
     }
   }
 }
